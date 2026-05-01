@@ -1,0 +1,59 @@
+{
+  "name": "AI Mobile Workspace",
+
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
+
+  "features": {
+    "ghcr.io/devcontainers/features/github-cli:1": {}
+  },
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "github.copilot",
+        "github.copilot-chat",
+        "anthropic.claude-code",
+        "esbenp.prettier-vscode",
+        "eamodio.gitlens",
+        "bradlc.vscode-tailwindcss"
+      ],
+
+      "settings": {
+        "editor.fontSize": 18,
+        "editor.lineHeight": 1.8,
+        "editor.wordWrap": "on",
+        "editor.minimap.enabled": false,
+        "editor.quickSuggestions": true,
+        "editor.suggestSelection": "first",
+        "editor.inlineSuggest.enabled": true,
+
+        "terminal.integrated.fontSize": 16,
+        "terminal.integrated.defaultLocation": "editor",
+        "terminal.integrated.smoothScrolling": true,
+
+        "workbench.activityBar.visible": false,
+        "breadcrumbs.enabled": false,
+        "workbench.editor.enablePreview": false,
+
+        "files.autoSave": "afterDelay",
+
+        "explorer.compactFolders": false,
+
+        "chat.editor.fontSize": 17
+      }
+    }
+  },
+
+  "forwardPorts": [3000],
+
+  "portsAttributes": {
+    "3000": {
+      "label": "Next.js App",
+      "onAutoForward": "openBrowser"
+    }
+  },
+
+  "postCreateCommand": "npm install && npm install -g @anthropic-ai/claude-code",
+
+  "postStartCommand": "npm run dev"
+}
