@@ -1,6 +1,29 @@
 {
-  "editor.tabSize": 2,
-  "editor.formatOnSave": true,
-  "editor.cursorBlinking": "smooth",
-  "terminal.integrated.cursorBlinking": true
+  "workbench.activityBar.visible": false,
+  "workbench.statusBar.visible": false,
+  "window.commandCenter": false,
+
+  "editor.minimap.enabled": false,
+  "editor.wordWrap": "on",
+  "editor.fontSize": 19,
+  "editor.lineHeight": 2,
+
+  "breadcrumbs.enabled": false,
+
+  "explorer.compactFolders": false,
+
+  "terminal.integrated.fontSize": 17,
+  "terminal.integrated.defaultLocation": "editor",
+
+  "workbench.editor.enablePreview": false,
+
+  "workbench.startupEditor": "none",
+
+  "files.autoSave": "afterDelay",
+
+  "zenMode.hideActivityBar": true,
+  "zenMode.hideStatusBar": true,
+  "zenMode.fullScreen": false,
+
+  "chat.commandCenter.enabled": false
 }
